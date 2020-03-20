@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Objects</title>
+	<script type="text/javascript">
+		var employee=new Object();
+		employee.name= "Prakruthi";
+		employee.id=1234;
+		employee.salary1=2000;
+		employee.salary2=21000;
+        employee.calculateAverage= function()
+        {
+        	return(employee.salary1+ employee.salary2);
+        };
+ 	employee.displaydetails= function()
+ 	{
+ 		document.write("employee id: " + employee.id + "<br />");
+ 		document.write("Name: " + employee.name + "<br />");
+ 		var avg= employee.calculateAverage();
+ 		document.write("Avg is: " + avg);
+ 	};
+    employee.displaydetails();
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
